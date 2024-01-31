@@ -1,23 +1,19 @@
 # Копирование на сервер
   - *Подключится к серверу по ssh или другими методами.*
-  - *Установить Nodejs и npm.*
+  - *Установить Nodejs и npm и git*
     ```bash
       $ sudo apt update
-      $ sudo apt install nodejs
+      $ sudo apt install nodejs npm git
+      Для проверки установки
       $ node -v
-      Output
-      v10.19.0
-    ```
-  - *Установить git*
-    ``` bash
-      $ sudo apt update
-      $ sudo apt install git
+      $ npm -v
       $ git --version
     ```
-  - *Создать папку проекта, скопировать в нее git репозиторий, при помощи git-clone. Предварительно проверьте файл конфигурации .env в репозитории*
+  - *Создать папку проекта в любом удобном месте, рекомендуется в /usr/local/bin/ .СКОПИРОВАТЬ В НЕЕ git репозиторий, при помощи git-clone.*
     ``` bash
       $ git clone {repository URL}
     ```
+  - *После копирования репозитория внести изменения в файл конфигурации .env*
 
 # Иницализация
   ```bash
@@ -25,8 +21,8 @@
   ```
 
 # Запуск приложения
+  - 
   ```bash
-    # development
     $ npm run start
 
     # production mode
