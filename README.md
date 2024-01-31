@@ -21,13 +21,14 @@
   ```
 
 # Запуск приложения
-  - 
+
   ```bash
+    Выполняется один раз при первичном запуске
     $ npm run start
 
-    # production mode
+    # production mode Запускает, при последующих запсках
     $ npm run start:prod
     
-    # watch mode
+    # watch mode Запуск, для отладки, для разрабочика
     $ npm run start:dev
   ```
